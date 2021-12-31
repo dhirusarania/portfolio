@@ -6,7 +6,7 @@
         <div>
           <svg
             @click.prevent="changeColorPreference('light')"
-            v-if="$colorMode.preference == 'dark'"
+            v-if="$colorMode.preference == 'dark' || $colorMode.preference == 'system'"
             class="w-6 h-6 night cursor-pointer hover"
             fill="none"
             stroke="currentColor"
